@@ -44,7 +44,9 @@ void prt(){
         while(aux!=NULL){
             cout<<aux->nombreApellido<<"-";
             cout<<aux->exp<<"-";
-            /*cout<<aux->fecha<<"-";*/
+            cout<<aux->fecha.dia<<"-";
+            cout<<aux->fecha.mes<<"-";
+            cout<<aux->fecha.ano<<"-";
             aux=aux->sgt;
         }
 }
@@ -68,8 +70,8 @@ int main(){
                 int d,m,a;
                 fecha f;
                 cout<<"Ingresa el dia a insertar en fecha : ??  ",cin>>d;
-                cout<<"Ingresa el dia a insertar en fecha : ??  ",cin>>m;
-                cout<<"Ingresa el dia a insertar en fecha : ??  ",cin>>a;
+                cout<<"Ingresa el mes a insertar en fecha : ??  ",cin>>m;
+                cout<<"Ingresa el año a insertar en fecha : ??  ",cin>>a;
                 f={d,m,a};
                 pushFecha(f);
                 break;
